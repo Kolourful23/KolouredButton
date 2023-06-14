@@ -1,0 +1,23 @@
+{
+  "name": "kolourfulthings",
+  "version": "1.0.0",
+  "description": "provides a themed button(black and white)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karthik",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kolourful23/KolouredButton.git"
+  },
+  "keywords": [
+    "buttons",
+    "colours"
+  ],
+  "bugs": {
+    "url": "https://github.com/Kolourful23/KolouredButton/issues"
+  },
+  "homepage": "https://github.com/Kolourful23/KolouredButton#readme"
+}
