@@ -8,6 +8,7 @@ function KolourfulButton(options){
         options.txt = 'black';
     }
     buttons.forEach(button =>{
+        button.style.appearance = 'none';
         button.style.background = `${options.type}`;
         button.style.color = `${options.txt}`;
     })
