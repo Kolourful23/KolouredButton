@@ -12,3 +12,5 @@ function KolourfulButton(options){
         button.style.color = `${options.txt}`;
     })
 }
+
+module.exports.KolourfulButton = KolourfulButton;
