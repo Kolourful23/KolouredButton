@@ -43,3 +43,41 @@ function KolourfulDiv(options){
 }
 
 module.exports.KolourfulDiv = KolourfulDiv;
+
+function KolourfulBackground(options){
+    let divs = document.querySelectorAll('.KolourfulBackgroundGrid');
+    let divs2 = document.querySelectorAll('.KolourfulBackgroundRadial');
+    let divs3 = document.querySelectorAll('.KolourfulBackgroundRadialGradient');
+    let divs4 = document.querySelectorAll('.KolourfulBackgroundDiagonal');
+    let divs5 = document.querySelectorAll('.KolourfulBackgroundHex');
+    divs.forEach(div=>{
+        div.style.width = '200px';
+        div.style.height = '200px';
+        div.style.borderRadius = '50px'
+        div.style.background = url('./KolourfulBackgroundGrid.jpg');
+    });
+    divs2.forEach(div=>{
+        div.style.width = '200px';
+        div.style.height = '200px';
+        div.style.borderRadius = '50px'
+        div.style.background = url('./KolourfulBackgroundRadial.jpg');
+    });
+    divs3.forEach(div=>{
+        div.style.width = '200px';
+        div.style.height = '200px';
+        div.style.borderRadius = '50px'
+        div.style.background = `radial-gradient(circle, ${options.radialStart},${options.radialEnd})`;
+    });
+    divs4.forEach(div=>{
+        div.style.width = '200px';
+        div.style.height = '200px';
+        div.style.borderRadius = '50px'
+        div.style.background = 'linear';
+    });
+    divs5.forEach(div=>{
+        div.style.width = '200px';
+        div.style.height = '200px';
+        div.style.borderRadius = '50px'
+        div.style.background = url('./KolourfulBackgroundHex.jpg');
+    });
+}
