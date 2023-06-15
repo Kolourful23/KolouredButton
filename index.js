@@ -11,7 +11,9 @@ function KolourfulButton(options){
         button.style.appearance = 'none';
         button.style.background = `${options.type}`;
         button.style.color = `${options.txt}`;
-        button.style.borderRadius = '5px';
+        button.style.width = '50px';
+        button.style.height = '30px';
+        button.style.borderRadius = '15px';
     });
 }
 
