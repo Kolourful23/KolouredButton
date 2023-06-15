@@ -54,13 +54,13 @@ function KolourfulBackground(options){
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = "url('./KolourfulBackgroundGrid.jpg')";
+        div.style.background = "url('KolourfulBackgroundGrid.jpg')";
     });
     divs2.forEach(div=>{
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = "url('./KolourfulBackgroundRadial.jpeg')";
+        div.style.background = "url('KolourfulBackgroundRadial.jpeg')";
     });
     divs3.forEach(div=>{
         div.style.width = '200px';
@@ -78,7 +78,7 @@ function KolourfulBackground(options){
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = "url('./KolourfulBackgroundHex.jpg')";
+        div.style.background = "url('KolourfulBackgroundHex.jpg')";
     });
 }
 module.exports.KolourfulBackground = KolourfulBackground;
