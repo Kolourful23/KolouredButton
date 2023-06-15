@@ -18,7 +18,7 @@ module.exports.KolourfulButton = KolourfulButton;
 
 function KolourfulDiv(options){
     let divs = document.querySelectorAll('.KolourfulDiv');
-    if(options.type === big){
+    if(options.type === 'big'){
         options.type = '200px';
         options.complimentary = '50px';
     }else{
