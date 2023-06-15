@@ -1,5 +1,5 @@
 function KolourfulButton(options){
-    let buttons = document.querySelectorAll('.KolourfulButton')
+    let buttons = document.querySelectorAll('.KolourfulButton');
     if(options.type === 'black'){
         options.type = 'black';
         options.txt = 'white';
@@ -11,7 +11,7 @@ function KolourfulButton(options){
         button.style.appearance = 'none';
         button.style.background = `${options.type}`;
         button.style.color = `${options.txt}`;
-    })
+    });
 }
 
 module.exports.KolourfulButton = KolourfulButton;
@@ -26,12 +26,12 @@ function KolourfulDiv(options){
         options.complimentary = '30px';
     }
     divs.forEach(div =>{
-        div.style.background = 'indigo';
+        div.style.backgroundColor = 'indigo';
         div.style.color = 'white';
         div.style.width = `${options.type}`;
-        div.style.height = `${options.complimentary}`
+        div.style.height = `${options.complimentary}`;
         div.style.borderRadius = '20px';
-    })
+    });
 }
 
 module.exports.KolourfulDiv = KolourfulDiv;
