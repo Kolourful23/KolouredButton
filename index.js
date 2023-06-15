@@ -54,31 +54,31 @@ function KolourfulBackground(options){
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = "url('KolourfulBackgroundGrid.jpg')";
+        div.style.backgroundImage = "url('./KolourfulBackgroundGrid.jpg')";
     });
     divs2.forEach(div=>{
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = "url('KolourfulBackgroundRadial.jpeg')";
+        div.style.backgroundImage = "url('./KolourfulBackgroundRadial.jpeg')";
     });
     divs3.forEach(div=>{
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = `radial-gradient(circle, ${options.radialStart},${options.radialEnd})`;
+        div.style.background = `radial-gradient(circle, ${options.colorStart},${options.colorEnd})`;
     });
     divs4.forEach(div=>{
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = 'linear';
+        div.style.background = `linear-gradient(to bottom right, ${options.colorStart},${options.colorEnd})`;
     });
     divs5.forEach(div=>{
         div.style.width = '200px';
         div.style.height = '200px';
         div.style.borderRadius = '50px'
-        div.style.background = "url('KolourfulBackgroundHex.jpg')";
+        div.style.backgroundImage = "url('./KolourfulBackgroundHex.jpg')";
     });
 }
 module.exports.KolourfulBackground = KolourfulBackground;
