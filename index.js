@@ -81,3 +81,4 @@ function KolourfulBackground(options){
         div.style.background = url('./KolourfulBackgroundHex.jpg');
     });
 }
+module.exports.KolourfulBackground = KolourfulBackground;
