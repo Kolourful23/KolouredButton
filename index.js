@@ -3,14 +3,15 @@ function KolourfulButton(options){
     if(options.type === 'black'){
         options.type = 'black';
         options.txt = 'white';
-    }else{
+    }else if(options.type === 'white'){
         options.type = 'white';
         options.txt = 'black';
-    }
+    }else{}
     buttons.forEach(button =>{
         button.style.appearance = 'none';
         button.style.background = `${options.type}`;
         button.style.color = `${options.txt}`;
+        button.borderRadius = '5px';
     });
 }
 
@@ -31,6 +32,11 @@ function KolourfulDiv(options){
         div.style.width = `${options.type}`;
         div.style.height = `${options.complimentary}`;
         div.style.borderRadius = '20px';
+        div.style.margin = '10px';
+        div.style.display = 'flex';
+        div.style.justifyContent = 'center';
+        div.style.alignItems = 'center';
+        div.style.textAlign = 'center';
     });
 }
 
