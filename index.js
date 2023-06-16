@@ -11,9 +11,13 @@ function KolourfulButton(options){
         button.style.appearance = 'none';
         button.style.background = `${options.type}`;
         button.style.color = `${options.txt}`;
-        button.style.width = '50px';
-        button.style.height = '30px';
+        button.style.width = '100px';
+        button.style.height = '50px';
         button.style.borderRadius = '15px';
+        button.style.display = 'flex';
+        button.style.justifyContent = 'center';
+        button.style.alignItems = 'center';
+        button.style.textAlign = 'center';
     });
 }
 
@@ -81,4 +85,5 @@ function KolourfulBackground(options){
         div.style.backgroundImage = "url('./KolourfulBackgroundHex.jpg')";
     });
 }
+
 module.exports.KolourfulBackground = KolourfulBackground;
