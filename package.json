@@ -1,6 +1,6 @@
 {
   "name": "kolourfulthings",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "provides a themed button(black and white)",
   "main": "index.js",
   "scripts": {
