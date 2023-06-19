@@ -87,3 +87,25 @@ function KolourfulBackground(options){
 }
 
 module.exports.KolourfulBackground = KolourfulBackground;
+
+function KolourfulInput(options){
+    let inputs = document.querySelectorAll('.KolourfulInput');
+    if(options.type === 'small'){
+        options.height = '30px';
+        options.width = '60px';
+    }else if(options.type === 'large'){
+        options.height = '30px';
+        options.width = '120px';
+    }else{
+        options.height = '30px';
+        options.width = '90px';
+    }
+    inputs.forEach(input => {
+        input.style.appearance = 'none';
+        input.style.height = `${options.height}`;
+        input.style.width = `${options.width}`;
+        input.style.transition = 'width 0.4s ease-in-out';
+    });
+}
+
+module.exports.KolourfulInput = KolourfulInput;
