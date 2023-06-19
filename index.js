@@ -109,3 +109,26 @@ function KolourfulInput(options){
 }
 
 module.exports.KolourfulInput = KolourfulInput;
+
+const KolourfulImage = (options) => {
+    let images = document.querySelectorAll('.KolourfulImage');
+    if(options.borderType === 'small'){
+        options.borderType = '1px';
+    }else if (options.borderType === 'large'){
+        options.borderType = '10px';
+    }else{
+        borderType = '5px';
+    }
+    if(options.shadowType === 'hard'){
+        options.shadowType = '0px';
+    }else if(options.shadowType === 'soft'){
+        options.shadowType = '5px';
+    }else{
+        options.shadowType = '15px';
+    }
+    images.forEach(image => {
+        image.style.boxShadow = `10px 10px ${options.shadowType} 1px rgba(0,0,0,0.5)`
+        image.style.border = `solid ${options.borderType} lightblue`;
+    });
+}
+module.exports.KolourfulImage = KolourfulImage;
