@@ -127,7 +127,7 @@ const KolourfulImage = (options) => {
         options.shadowType = '15px';
     }
     images.forEach(image => {
-        image.style.boxShadow = `10px 10px ${options.shadowType} 1px rgba(0,0,0,0.5)`
+        image.style.boxShadow = `10px 10px ${options.shadowType} 1px rgba(0,0,0,0.6)`
         image.style.border = `solid ${options.borderType} lightblue`;
         image.style.height = '180px';
         image.style.width = '210px'
