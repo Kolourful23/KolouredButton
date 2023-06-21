@@ -1,6 +1,6 @@
 {
   "name": "kolourfulthings",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "provides a themed button(black and white)",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,12 @@
   },
   "keywords": [
     "buttons",
-    "colours"
+    "colourful",
+    "divs",
+    "Backgrounds",
+    "borders",
+    "shadows",
+    "images"
   ],
   "bugs": {
     "url": "https://github.com/Kolourful23/KolouredButton/issues"
